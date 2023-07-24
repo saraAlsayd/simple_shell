@@ -12,12 +12,12 @@
 #include <fcntl.h>
 #include <errno.h>
 
-/* to read/write buffers */
+/* buffers read/write */
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
-/* to convert_number() */
+/* to convert */
 #define CONVERT_LOWERCASE	1
 #define CONVERT_UNSIGNED	2
 
