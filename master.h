@@ -172,6 +172,7 @@ struct builtin
     int __unsetenv(info_t *info);
     /*echo*/
     int _echo(char **avs);
-
+    /*memory free*/
+    int free(void **ptr);
     #endif
 
