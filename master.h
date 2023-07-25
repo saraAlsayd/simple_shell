@@ -65,7 +65,8 @@
 #define UNSETENV_DESC								\
 	"Remove the variable NAME .\0"	\
 	"\0"
-
+#define SIZEBUFFER 1024;
+void shell();
     
 typedef int (*builtin_fp)(info_t *);
 typedef dict_t env_t;
@@ -169,6 +170,8 @@ struct builtin
 
     /*unsetnev file*/
     int __unsetenv(info_t *info);
+    /*echo*/
+    int _echo(char **avs);
 
     #endif
 
