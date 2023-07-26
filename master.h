@@ -174,5 +174,8 @@ struct builtin
     int _echo(char **avs);
     /*memory free*/
     int free(void **ptr);
+    void shell(void);
+    /*Write a UNIX command line interpreter*/
+    void execmd(char **argv);
     #endif
 
