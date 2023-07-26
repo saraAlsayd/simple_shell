@@ -1,4 +1,4 @@
-#include "main.h"
+#include "master.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

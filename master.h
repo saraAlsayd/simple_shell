@@ -20,5 +20,4 @@ char *_strchr(char *str, char ch);
 char *_strncpy(char *dest, char *src, int m);
 char *_strncat(char *dest, char *src, int m);
 
-
 #endif
