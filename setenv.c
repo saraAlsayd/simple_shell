@@ -1,48 +1,39 @@
-#include "main.h"
+#include "master.h"
 
 /**
- * __setenv - seting the environment of the variables
- * @info: arguments passed in pro.
- *
- * Return: status of the pro.
+ * _mysetenv - Initializing a new environment of variable.
+ * @info: Structure containing potential of the arguments. 
+ *  Return: Always 0
  */
-int __setenv(info_t *info)
+int _mysetenv(info_t *info)
 {
-	env_t *var;
-	char **args = info->tokens + 1, *val;
+	if (info->argc != 3)
+	{
+		_eputs("Incorrect number of arguements\n");
+		return (1);
+	}
+	if (_setenv(info, info->argv[1], info->argv[2]))
+		return (0);
+	return (1);
+}
 
-	if (args[0])
+/**
+ * _myunsetenv - Remove the environment.
+ * @info: Structure containing arguments.
+ * Return: Always 0
+ */
+int _myunsetenv(info_t *info)
+{
+	int k;
+
+	if (info->argc == 1)
 	{
-		if (args[1])
-		{
-			if (args[2])
-			{
-				perrorl("Too many arguments.", *info->tokens, NULL);
-				info->status = EXIT_FAILURE;
-				return (info->status);
-			}
-			val = args[1];
-		}
-		else
-		{
-			val = "";
-		}
-		var = get_dict_node(info->env, args[0]);
-		if (var)
-		{
-			free(var->val);
-			var->val = _strdup(val);
-		}
-		else
-		{
-			add_dict_node_end(&info->env, args[0], val);
-		}
-		info->status = EXIT_SUCCESS;
+		_eputs("Too few arguements.\n");
+		return (1);
 	}
-	else
-	{
-		__env(info);
-	}
-	return (info->status);
+	for (k = 1; k <= info->argc; k++)
+		_unsetenv(info, info->argv[k]);
+
+	return (0);
 }
 
