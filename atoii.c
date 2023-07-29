@@ -20,10 +20,10 @@ int interactive(info_t *info)
 
 int is_delim(char ch, char *delim)
 {
-        while (*delim)
-		if (*delim++ == ch)
-			return (1);
-	    return (0);
+while (*delim)
+if (*delim++ == ch)
+return (1);
+return (0);
 }
 
 /**
