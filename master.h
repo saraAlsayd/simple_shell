@@ -174,7 +174,7 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* toem_builtin.c */
-int _myexit(info_t *);
+int _myexit(info_t *info);
 int _mycd(info_t *);
 int _myhelp(info_t *);
 
@@ -183,7 +183,9 @@ int _myhistory(info_t *);
 int _myalias(info_t *);
 
 /*toem_getline.c */
-ssize_t get_input(info_t *);
+ssize_t input_buf(info_t *info, char **buf, size_t *len);
+ssize_t get_input(info_t *info);
+ssize_t read_buf(info_t *info, char *buf, size_t *z);
 int _getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 

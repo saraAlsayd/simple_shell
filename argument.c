@@ -5,7 +5,7 @@
   * @info: arguments passed
   * Return: int
   */
-int __exit(info_t *info)
+int _myexit(info_t *info)
 {
 	int checkex;
 
