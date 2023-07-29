@@ -23,7 +23,8 @@ int is_delim(char ch, char *delim)
 	while (*delim)
 		if (*delim++ == ch)
 			return (1);
-	    return (0);
+	else
+		return (0);
 }
 
 /**
@@ -73,3 +74,4 @@ int _atoi(char *str)
 
 	return (output);
 }
+
