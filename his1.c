@@ -71,11 +71,12 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers the history of the linked list 
+ * renumber_history - renumbering the history linked list.
  * @info: Structure containing potential arguments.
  *
- * Return: new histcount.
+ * Return: the histcount
  */
+
 int renumber_history(info_t *info)
 {
 	list_t *node = info->history;
