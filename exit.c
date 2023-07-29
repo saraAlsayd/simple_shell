@@ -70,9 +70,6 @@ char *_strncat(char *dest, char *src, int m)
 
 }
 
-<<<<<<< HEAD
-=======
-
 /**
  **_strchr - locates a character.
  *@str: the string.
@@ -88,4 +85,3 @@ char *_strchr(char *str, char ch)
 
 	return (NULL);
 }
->>>>>>> 1df2f08b810c826f80d4db6f2c25a0639c95ff30

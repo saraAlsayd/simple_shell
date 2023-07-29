@@ -147,10 +147,6 @@ int _putchar(char);
 char *_strchr(char *, char);
 char *_strncpy(char *, char *, int);
 char *_strncat(char *, char *, int);
-<<<<<<< HEAD
-=======
-char *_strchr(char *str, char ch);
->>>>>>> 1df2f08b810c826f80d4db6f2c25a0639c95ff30
 
 /* toem_tokenizer.c */
 char **strtow(char *, char *);
