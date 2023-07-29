@@ -76,20 +76,3 @@ char *_strncat(char *dest, char *src, int m)
 
 }
 
-
-/**
- **_strchr - locates a character.
- *@str: the string.
- *@ch: the character.
- *Return: (s) a pointer.
- */
-char *_strchr(char *str, char ch)
-{
-	do {
-		if (*str == ch)
-			return (str);
-	} while (*str++ != '\0');
-
-	return (NULL);
-}
-
