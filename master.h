@@ -182,8 +182,12 @@ int _myhelp(info_t *);
 int _myhistory(info_t *);
 int _myalias(info_t *);
 
-/*toem_getline.c */
+/*getline.c file*/
+ssize_t input_buf(info_t *, char **, size_t *);
 ssize_t get_input(info_t *);
+ssize_t read_buf(info_t *, char *, size_t *);
+
+/*getline1.c file*/
 int _getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 
