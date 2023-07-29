@@ -1,10 +1,11 @@
 #include "master.h"
 
 /**
- * get_environ - returning the string 
- * @info: Structure containing potential arguments.
+ * get_environ - returnning the string array.
+ * @info: Structure containing the arguments.
  * Return: Always 0
  */
+
 char **get_environ(info_t *info)
 {
 	if (!info->environ || info->env_changed)

@@ -51,10 +51,11 @@ char *_strncpy(char *dest, char *src, int m)
  */
 char *_strncat(char *dest, char *src, int m)
 {
-	int x = 0; 
-	int y = 0;
+	int x, y;
 	char *str = dest;
 
+	x = 0;
+	y = 0;
 	while (dest[x] != '\0')
 		x++;
 	while (src[y] != '\0' && y < m)
@@ -66,4 +67,22 @@ char *_strncat(char *dest, char *src, int m)
 	if (y < m)
 		dest[x] = '\0';
 	return (str);
+
+}
+
+
+/**
+ **_strchr - locates a character.
+ *@str: the string.
+ *@ch: the character.
+ *Return: (s) a pointer.
+ */
+char *_strchr(char *str, char ch)
+{
+	do {
+		if (*str == ch)
+			return (str);
+	} while (*str++ != '\0');
+
+	return (NULL);
 }

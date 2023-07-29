@@ -18,8 +18,9 @@ char *_memset(char *str, char b, unsigned int m)
 
 /**
  * ffree - freeing a string.
- * @ppr: the string 
+ * @ppr: string of strings.
  */
+
 void ffree(char **ppr)
 {
 	char **a = ppr;

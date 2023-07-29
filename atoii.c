@@ -15,14 +15,16 @@ int interactive(info_t *info)
  * is_delim - checks if character is a delimeter
  * @ch: the char.
  * @delim: the delimeter.
- * Return: 1 if true,Or 0. 
+ * Return: 1 if true, 0.
  */
+
 int is_delim(char ch, char *delim)
 {
 	while (*delim)
 		if (*delim++ == ch)
 			return (1);
-	    return (0);
+	else
+		return (0);
 }
 
 /**

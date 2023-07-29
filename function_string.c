@@ -1,11 +1,12 @@
 #include "master.h"
 
 /**
- * _strlen - returning the length of the string
- * @str: the string 
+ * _strlen - returning the length from string.
+ * @str: the string.
  *
- * Return: the integer.
+ * Return: integer length.
  */
+
 int _strlen(char *str)
 {
 	int j = 0;

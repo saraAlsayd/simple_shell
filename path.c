@@ -22,14 +22,16 @@ int is_cmd(info_t *info, char *path)
 	return (0);
 }
 
+
 /**
- * dup_chars - duplicating the characters
- * @pathstr: the PATH string
- * @start: starting
- * @stop: stopping 
+ * dup_chars - duplicatting characters
+ * @pathstr: the PATH.
+ * @start: starting.
+ * @stop: stopping.
  *
  * Return: pointer.
  */
+
 char *dup_chars(char *pathstr, int start, int stop)
 {
 	static char buf[1024];

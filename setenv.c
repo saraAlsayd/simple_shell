@@ -1,9 +1,9 @@
 #include "master.h"
 
 /**
- * _mysetenv - Initializing a new environment of variable.
- * @info: Structure containing potential of the arguments. 
- *  Return: Always 0
+ * _myenv - prints the current environment
+ * @info: Structure containing potential the arguments.
+ * Return: Always 0
  */
 
 int _mysetenv(info_t *info)
