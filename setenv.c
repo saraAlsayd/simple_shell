@@ -5,6 +5,7 @@
  * @info: Structure containing potential of the arguments. 
  *  Return: Always 0
  */
+
 int _mysetenv(info_t *info)
 {
 	if (info->argc != 3)

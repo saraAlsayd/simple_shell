@@ -1,12 +1,10 @@
 #include "master.h"
-
 /**
  **_strchr - locates a character
  *@str: string .
  *@ch: character.
  *Return: a pointer.
  */
-
 char *_strchr(char *str, char ch)
 {
 	do {
@@ -16,7 +14,6 @@ char *_strchr(char *str, char ch)
 
 	return (NULL);
 }
-
 /**
  **_strncpy - copies string.
  *@dest: the destination.
@@ -24,13 +21,12 @@ char *_strchr(char *str, char ch)
  *@m: the amount.
  *Return: string.
  */
-
 char *_strncpy(char *dest, char *src, int m)
 {
 	int y, x = 0;
 	char *str = dest;
 
-	while (src[x] != '\0' && x < m - 1)
+        while (src[x] != '\0' && x < m - 1)
 	{
 		dest[x] = src[x];
 		x++;
@@ -46,7 +42,6 @@ char *_strncpy(char *dest, char *src, int m)
 	}
 	return (str);
 }
-
 /**
  **_strncat - concatenates strings
  *@dest: the first.
@@ -54,7 +49,6 @@ char *_strncpy(char *dest, char *src, int m)
  *@m: the amount of bytes.
  *Return: the string.
  */
-
 char *_strncat(char *dest, char *src, int m)
 {
 	int x = 0; 
@@ -73,4 +67,3 @@ char *_strncat(char *dest, char *src, int m)
 		dest[x] = '\0';
 	return (str);
 }
-
