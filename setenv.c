@@ -2,6 +2,8 @@
 
 /**
  * _myenv - prints the current environment
+ *  _mysetenv - Initialize a new environment variable,
+ *            or modify an existing one
  * @info: Structure containing potential the arguments.
  * Return: Always 0
  */

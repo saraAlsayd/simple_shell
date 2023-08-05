@@ -130,13 +130,12 @@ void _eputs(char *);
 int _eputchar(char);
 int _putfd(char c, int fd);
 int _putsfd(char *str, int fd);
-
+i
 /* toem_string.c */
 int _strlen(char *);
 int _strcmp(char *, char *);
 char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
-
 /* toem_string1.c */
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
