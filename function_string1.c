@@ -1,4 +1,4 @@
-i#include "master.h"
+#include "master.h"
 
 /**
  * _strcpy - copies a string
