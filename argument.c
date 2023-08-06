@@ -1,7 +1,7 @@
 #include "master.h"
 
 /**
-  * __exit - exits from shell
+  * _myexit - exits from shell
   * @info: arguments passed
   * Return: int
   */
